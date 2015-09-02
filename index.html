@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <head>
+<style>
+	form{
+		text-align: center;
+	}
+	
+	h1{
+		text-align: center;
+	}
+</style>
 <html lang="es">
 <meta charset="Utf-8">
 <title>Formulario</title> 
+
 </head>
 <body>
-<form>
+
+<h1 >Formulario de Basico em HTML </h1>
+<form >
+
 <p>
-Buscar: <input type="search" name ="seach">
+
+	<label for="Buscar">Buscar:</label>
+	<input type="search" name ="search" id="Buscar"/>
 <br>
-<br/>	
-Nombre : <input type="text" name ="name" autofocus required />
+<br/>
+		<label for="Nombre">Nombre :</label>
+		<input type="text" name ="name" autofocus required id="Nombre"/>
 <br>
 <br/>
 <!-- autofocus required obliga a que se auto ingrese un dato-->
-Apellido: <input type="text" apellido="apellido" autofocus required />
+		<label for = "apellido">Apellido:</label>
+		<input type="text" apellido="apellido" autofocus required id  = "apellido" />
 <br> <br/>
-Correo: <input type="email" name="email"/>
+		<label for = "correo">Correo:</label>
+		<input type="email" name="email" id = "correo"/>
 <br>    <br/>
-Date: <input type="date" name ="date"/>
+		<label for = "Date">Date:</label>
+		<input type="date" name ="date" id="Date"/>
 <br> <br/>
-Time : <input type= "time" name= "time"/> 
+		<label for = "time">Time:</label>
+		<input type= "time" name= "time" id="time"/> 
 <br> <br/>
-Datetime : <input type="datetime" name="a"/>
+		<label for = "datetime">Datetime:</label>
+		<input type="datetime" name="a" id="datetime"/>
 <br></br>
-mes : <input  type="month" name="mes" min="0" max="10" value="0">
+		<label for = "mes">mes :</label>
+		<input  type="month" name="mes" min="0" max="10" value="0" id="mes">
 <br></br>
-rango: <input type="range" name ="rango" min="0" max="10" value="0" >
+		<label for = "rango">rango:</label>
+		<input type="range" name ="rango" min="0" max="10" value="0" id="rango">
 <br></br>
-tel: <input type="tel" name="tel">
+		<label for = "tel">tel:</label>
+		<input type="tel" name="tel" id="tel">
 <br></br>
-color : <input type="color" name="color">
-
+		<label for = "color">Color:</label>
+		<input type="color" name="color" id = "color">
+		
+<br></br>
+		<input type="submit" value="Enviar"">
 </p>
 </form>
 
